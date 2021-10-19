@@ -1,0 +1,154 @@
+body {
+	background-color: rgb(34, 34, 34);
+}
+
+h1 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: rgb(255, 255, 255);
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+	h2 {
+		color: rgb(255, 255, 255);
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
+
+	img {
+		display: flex;
+		max-height: 200%;
+		max-width: 200%;
+		width: 318px;
+		height: 800px;
+		object-fit: cover;
+	}
+
+	/* For desktop: */
+	.columns {
+		column-count: 6;
+		column-gap: 0px;
+		display: flex;
+		justify-content: center;
+	}
+
+	article {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	p {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		max-height: 60%;
+		max-width: 60%;
+		color: rgb(170, 170, 170);
+	}
+
+	.individ_Bilder {
+		max-height: 100%;
+		max-width: 100%;
+		width: 60%;
+		height: 60%;
+		float: right;
+	}
+
+	figure {
+		width: 40%;
+		float: left;
+		padding-right: 2%;
+		margin-right: 2%;
+	}
+
+	figcaption {
+		width: 70%;
+		float: right;
+		margin-right: -10%;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		color: rgb(128, 128, 128);
+	}
+
+	.nav {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		text-align: center;
+		max-height: 60%;
+		max-width: 60%;
+		margin-right: 20%;
+		margin-left: 44%;
+		margin-top: 20%;
+		padding: 1%;
+		background-color: rgb(24, 24, 24);
+		position: relative;
+	}
+
+	main {
+		margin-top: 5%;
+		display: absolute;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+
+	article {
+		display: flex;
+		justify-content: center;
+	}
+
+	img {
+		display: flex;
+		justify-content: center;
+		object-fit: cover;
+		max-width: 100%;
+		max-height: 100%;
+		width: 400px;
+		height: 400px;
+		padding-bottom: 7%;
+	}
+
+	main {
+		margin: 5%;
+	}
+
+	.nav {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		text-align: center;
+		margin-top: 20%;
+		padding: 1%;
+		background-color: rgb(24, 24, 24);
+	}
+
+	p {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		max-width: 80%;
+		color: rgb(170, 170, 170);
+	}
+
+	figure {
+		margin-left: 10%;
+		margin-right: auto;
+	}
+
+	figure > img {
+		max-width: 530px;
+		max-height: 530px;
+		width: 400px;
+		height: 400px;
+		padding: 0%;
+	}
+
+	figcaption {
+		width: 105%;
+		margin-right: -10%;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		color: rgb(128, 128, 128);
+	}
+
+	h2 {
+		color: rgb(255, 255, 255);
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+		margin: 10%;
+		margin-bottom: 0%;
+	}
+}
